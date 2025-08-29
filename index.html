@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>ASCII Bonsai Live</title>
+<style>
+  :root {
+    --bg: #000;
+    --leaf: #31e66a;   /* green leaves */
+    --trunk: #d05941;  /* reddish trunk */
+    --pot: #43c7ff;    /* cyan pot */
+    --w: 90;           /* columns */
+    --h: 48;           /* rows */
+    --size: 12px;      /* font size */
+  }
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: var(--size);
+    overflow: hidden;
+  }
+  pre {
+    margin: 0;
+    line-height: 1.05;
+    white-space: pre;
+    user-select: none;
+  }
+  .t { color: var(--trunk); }
+  .l { color: var(--leaf); }
+  .p { color: var(--pot); }
+</style>
+</head>
+<body>
+<pre id="screen"></pre>
 <script src="bonsai.js"></script>
+</body>
+</html>
